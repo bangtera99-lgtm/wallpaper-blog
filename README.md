@@ -1,30 +1,46 @@
 # Wallpaper HP Gratis — Blog Statis untuk GitHub Pages
 
-Blog download wallpaper HP gratis (Bahasa Indonesia, SEO-ready, mobile-first).
-Tanpa build step: file HTML/CSS/JS statis, langsung tayang di GitHub Pages.
+Blog download wallpaper HP gratis — bilingual (Bahasa Indonesia + English),
+SEO-ready, mobile-first. Tanpa build step: file HTML/CSS/JS statis,
+langsung tayang di GitHub Pages.
+
+Target SEO: Indonesia + US/global. Kategori Indonesia menargetkan pencarian
+Bahasa Indonesia; 15 kategori baru berbahasa Inggris menargetkan pencarian
+global/US yang paling dicari (sunset, galaxy, ocean, city lights, forest,
+minimal, neon, mountain, anime, cyberpunk, space, cars, technology, nature,
+abstract, animals).
 
 **Penting — download jujur:** setiap kartu wallpaper punya tombol
 **Download Wallpaper** yang mengarah langsung ke file gambar aslinya
 (Unsplash, `w=1080`). Tidak ada tombol download palsu yang me-redirect
-ke iklan. Iklan Adsterra dipasang di slot yang diberi label “Iklan”,
-terpisah dari tombol download.
+ke iklan. Iklan Adsterra hanya Popunder + Smart Link (Direct Link) yang
+diberi label “Iklan”, terpisah dari tombol download.
 
 ## Isi repo
 
 | File / folder | Fungsi |
 |---|---|
-| `index.html` | Beranda — grid wallpaper, pencarian, filter kategori, SEO |
-| `categories/*.html` | Halaman SEO tiap kategori: `aesthetic`, `anime`, `islami`, `pemandangan`, `hewan`, `emoji` |
+| `index.html` | Beranda — grid wallpaper, pencarian, filter kategori, SEO ID + EN |
+| `categories/*.html` | Halaman SEO tiap kategori (21 halaman: 5 ID + 15 EN + emoji) |
 | `assets/style.css`, `assets/app.js` | Desain + pencarian/filter (memuat `data/wallpapers.json`) |
-| `data/wallpapers.json` | 36 wallpaper starter (sudah tayang) |
-| `data/pool.json` | 24 wallpaper cadangan untuk auto-update harian |
+| `data/wallpapers.json` | 66 wallpaper starter (sudah tayang) |
+| `data/pool.json` | 60 wallpaper cadangan untuk auto-update harian (= 10 hari @ 6/hari) |
 | `data/emoji.json` | 6 paket Emoji / Stiker WA |
 | `scripts/generate.py` | Generator: render ulang semua halaman + mode `--daily` |
 | `.github/workflows/daily-update.yml` | Cron harian 01:00 UTC — tambah 6 wallpaper, commit otomatis |
-| `sitemap.xml`, `feed.xml`, `robots.txt` | SEO: sitemap, RSS, robots |
+| `sitemap.xml`, `feed.xml`, `robots.txt` | SEO: sitemap (22 URL), RSS, robots |
 
-Kategori: **Aesthetic (8), Anime (6), Islami (7), Pemandangan Alam (8),
+Kategori Indonesia: **Aesthetic (8), Anime (6), Islami (7), Pemandangan Alam (8),
 Hewan Lucu (7)** = 36 wallpaper starter, plus 6 paket Emoji/Stiker WA.
+
+Kategori Inggris (baru, 2026-11-21): **Sunset (5), Galaxy (5), Ocean (4),
+City Lights (5), Forest (4), Minimal (4), Neon (5), Mountain (4),
+Cyberpunk (4), Space (4), Cars (5), Technology (4), Nature (4),
+Abstract (5), Animals (4)** = 66 wallpaper baru (30 starter + 36 pool).
+Total starter: 66 wallpaper. Total pool: 60 wallpaper.
+
+Semua gambar Unsplash baru sudah diverifikasi dengan HEAD request (HTTP 200)
+sebelum dipakai; ID yang 404 dibuang (9 ID dibuang dari 103 kandidat).
 
 ## 1. Cara mengaktifkan GitHub Pages
 
@@ -40,23 +56,18 @@ Hewan Lucu (7)** = 36 wallpaper starter, plus 6 paket Emoji/Stiker WA.
    `python scripts/generate.py` dan push lagi. Ini supaya sitemap,
    canonical, dan RSS memakai URL yang benar.
 
-## 2. Tempat menempel kode Adsterra
+## 2. Iklan Adsterra yang dipakai
 
-Semua slot sudah ditandai di HTML dengan komentar
-`<!-- ADSTERRA: ... — paste code here -->`. Cari komentar itu di
-`index.html` dan `categories/*.html` (atau lebih mudah: edit template
-di `scripts/generate.py`, lalu jalankan ulang generatornya).
+Hanya **Popunder + Smart Link (Direct Link)** — tidak ada slot banner
+(banner 728x90, in-feed, dan sidebar sengaja dihapus 2026-11-21 atas
+permintaan Putela, termasuk penyisipan slot kosong di `assets/app.js`).
 
-| Slot | Letak | Kode Adsterra yang ditempel |
-|---|---|---|
-| **Popunder / Social Bar** | Blok `ADSTERRA: POPUNDER / SOCIAL BAR` di `<head>` setiap halaman | Script Popunder atau Social Bar dari dashboard Adsterra → Websites → Social Bar / Popunder |
-| **Banner 728x90** | `ADSTERRA: BANNER 728x90` — tepat di bawah header | Kode banner Adsterra ukuran 728x90 (di HP otomatis menyesuaikan lebar) |
-| **In-feed / Native** | `ADSTERRA: IN-FEED / NATIVE BANNER` — di tengah grid wallpaper | Kode Native Ads / banner Adsterra |
-| **Sidebar** | `ADSTERRA: SIDEBAR BANNER` — kolom kanan (desktop) | Kode banner Adsterra (mis. 300x250) |
-| **Direct Link** | **Jangan** ditempel di tombol Download. Kalau mau memakai Direct Link, buat tombol/link teks terpisah yang jelas, mis. di footer atau di bawah grid, dengan label “Sponsor” / “Iklan”. Tombol Download harus tetap ke gambar asli. | Direct Link Adsterra (Websites → Direct Link) |
+| Iklan | Letak |
+|---|---|
+| **Popunder** | Script di `<head>` setiap halaman (template `AD_HEAD` di `scripts/generate.py`) |
+| **Smart Link / Direct Link** | Link teks berlabel “Iklan” — “Lihat Penawaran Sponsor” — di footer setiap halaman. **Jangan** ditempel di tombol Download. Tombol Download harus tetap ke gambar asli. |
 
-Catatan: saat menempel kode, hapus baris placeholder di dalam slot itu.
-Jangan menempel kode yang sama di semua slot — satu kode untuk satu
+Jangan menempel kode yang sama di semua penempatan — satu kode untuk satu
 penempatan, sesuai yang dibuat di dashboard Adsterra.
 
 ## 3. Cara kerja auto-update harian
@@ -72,7 +83,7 @@ penempatan, sesuai yang dibuat di dashboard Adsterra.
 3. Workflow meng-commit dan push hasilnya kembali ke repo.
    GitHub Pages membangun ulang otomatis — wallpaper baru langsung tampil.
 
-**Stok pool:** 24 entri = 4 hari auto-update (6/hari). Sebelum habis,
+**Stok pool:** 60 entri = 10 hari auto-update (6/hari). Sebelum habis,
 tambahkan entri baru ke `data/pool.json` dengan format yang sama
 (`id`, `slug`, `title`, `category`, `description`, `tags`,
 `resolution`, `unsplash_id`, `image`, `full`, `date` boleh kosong).
@@ -86,23 +97,20 @@ python scripts/generate.py          # render ulang saja
 python scripts/generate.py --daily  # tambah 6 dari pool + render ulang
 ```
 
-## 4. Yang masih harus Putela lakukan sebelum push
-
-- [ ] Hubungkan akun GitHub ke Muse (saat ini **belum terhubung**).
-- [ ] Pilih / beri tahu nama repo, mis. `wallpaper-blog`.
-- [ ] Ganti `SITE_URL` di `scripts/generate.py` dan `robots.txt`
-      dengan URL GitHub Pages yang sebenarnya.
-- [ ] (Opsional) Tempel kode Adsterra di slot-slot di atas — blog
-      tetap jalan tanpa iklan, jadi ini bisa belakangan.
-- [ ] Setelah repo dibuat, beri tahu Muse agar file-file ini di-push.
-
-## 5. SEO yang sudah disiapkan
+## 4. SEO yang sudah disiapkan
 
 - Meta description, Open Graph, Twitter Card, dan JSON-LD
   (`CollectionPage` + `ImageObject`) di setiap halaman.
-- Judul + deskripsi Bahasa Indonesia per wallpaper, tag kata kunci,
-  URL kategori yang jelas (`/categories/aesthetic.html`, dst.).
-- `sitemap.xml` (diperbarui tiap generate), `robots.txt`, RSS `feed.xml`.
+- Judul + deskripsi Bahasa Indonesia per wallpaper ID, dan judul +
+  deskripsi English yang kaya kata kunci per wallpaper EN
+  (mis. “Sunset Mountain Wallpaper HD for iPhone”).
+- Halaman kategori EN memakai `<html lang="en">`, H1 dan meta title
+  Inggris (“Sunset Wallpaper for iPhone & Android — Free HD Download”).
+- Beranda punya dua bagian SEO: Bahasa Indonesia (“Cara Download
+  Wallpaper HP Gratis”) dan English (“Free HD Wallpapers for iPhone &
+  Android — Trending Now”) yang menautkan ke 15 kategori trending.
+- URL kategori yang jelas (`/categories/sunset.html`, dst.).
+- `sitemap.xml` (22 URL, diperbarui tiap generate), `robots.txt`, RSS `feed.xml`.
 - Desain mobile-first, gambar `loading="lazy"`, tanpa build step.
 
 ## Lisensi gambar
