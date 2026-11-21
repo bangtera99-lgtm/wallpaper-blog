@@ -1,0 +1,48 @@
+/* Wallpaper HP Gratis — mobile-first, cepat, tanpa build step */
+*{box-sizing:border-box}
+:root{--bg:#f6f7f9;--card:#fff;--text:#17202a;--muted:#5b6b7a;--accent:#2563eb;--accent2:#7c3aed;--border:#e5e9ef;--radius:14px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header.site{background:#111827;color:#fff;padding:14px 16px}
+header.site .wrap,main.wrap,footer .wrap{max-width:1080px;margin:0 auto}
+.brand{font-size:22px;font-weight:800;color:#fff}
+.brand span{color:#93c5fd}
+.tagline{color:#cbd5e1;font-size:14px;margin:2px 0 0}
+nav.cat{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+nav.cat a{background:#1f2937;color:#e5e7eb;padding:6px 12px;border-radius:999px;font-size:13px}
+nav.cat a:hover{background:#374151;text-decoration:none}
+nav.cat a.active{background:var(--accent);color:#fff}
+main.wrap{padding:16px}
+h1{font-size:26px;line-height:1.25;margin:8px 0}
+h2{font-size:20px;margin:28px 0 10px}
+.lead{color:var(--muted)}
+.search{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font-size:16px;margin:12px 0}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px}
+.filters button{border:1px solid var(--border);background:#fff;padding:7px 12px;border-radius:999px;cursor:pointer;font-size:14px}
+.filters button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.grid{grid-template-columns:1fr 1fr 1fr}.layout{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.card img{width:100%;height:340px;object-fit:cover;display:block;background:#ddd}
+.card-body{padding:12px 14px}
+.card-body h3{font-size:16px;margin:0 0 6px;line-height:1.35}
+.card-body p{font-size:14px;color:var(--muted);margin:0 0 10px}
+.meta{font-size:12px;color:var(--muted)}
+.badge{display:inline-block;background:#eef2ff;color:#3730a3;font-size:12px;padding:2px 8px;border-radius:999px;margin-bottom:6px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:9px 16px;border-radius:9px;font-weight:700;font-size:14px}
+.btn:hover{background:#1d4ed8;text-decoration:none}
+.btn-secondary{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+.ad-slot{border:1px dashed #cbd5e1;background:#fff;border-radius:10px;padding:10px;text-align:center;color:#94a3b8;font-size:12px;margin:16px 0;overflow:hidden}
+.ad-slot .ad-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8}
+.ad-slot.banner728{max-width:728px;margin-left:auto;margin-right:auto;min-height:90px}
+.seo{margin-top:28px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+.seo h2{margin-top:0}
+footer{background:#111827;color:#cbd5e1;padding:20px 16px;margin-top:32px;font-size:14px}
+footer a{color:#93c5fd}
+.emoji-grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:600px){.emoji-grid{grid-template-columns:1fr 1fr}}
+.emoji-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:14px}
+.emoji-big{font-size:34px;letter-spacing:4px}
+.copy-btn{margin-top:8px;border:1px solid var(--border);background:#f8fafc;padding:7px 12px;border-radius:8px;cursor:pointer}
