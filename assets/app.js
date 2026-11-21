@@ -23,15 +23,9 @@
   }
   function render(list) {
     grid.innerHTML = '';
-    list.forEach(function (w, i) {
+    list.forEach(function (w) {
       grid.appendChild(card(w));
-      // Slot iklan in-feed (kosong sampai kode Adsterra ditempel di HTML statis)
-      if (i === 5) {
-        var ad = document.createElement('div');
-        ad.className = 'ad-slot';
-        ad.innerHTML = '<span class="ad-label">Iklan</span>';
-        grid.appendChild(ad);
-      }
+      // Tidak ada slot banner — hanya Popunder + Smart Link (Direct Link) yang dipakai.
     });
     if (count) count.textContent = list.length + ' wallpaper';
   }
