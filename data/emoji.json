@@ -1,0 +1,38 @@
+[
+  {
+    "id": "emoji-1",
+    "name": "Stiker WA Lucu",
+    "emoji": "😂 🤣 😍 🥰 😘 😜",
+    "description": "Stiker WA lucu untuk chat sehari-hari. Salin emoji di bawah ini dan tempel di WhatsApp."
+  },
+  {
+    "id": "emoji-2",
+    "name": "Emoji Cinta & Sayang",
+    "emoji": "❤️ 💕 💖 💗 💓 💞",
+    "description": "Emoji cinta dan sayang untuk pacar, pasangan, dan keluarga di WhatsApp."
+  },
+  {
+    "id": "emoji-3",
+    "name": "Emoji Hewan Lucu",
+    "emoji": "🐱 🐶 🐰 🐼 🐨 🦊",
+    "description": "Emoji hewan lucu untuk stiker WA dan status WhatsApp."
+  },
+  {
+    "id": "emoji-4",
+    "name": "Emoji Semangat & Sukses",
+    "emoji": "🔥 💪 🎉 🏆 ⭐ 🚀",
+    "description": "Emoji semangat, sukses, dan perayaan untuk chat dan status WA."
+  },
+  {
+    "id": "emoji-5",
+    "name": "Emoji Makanan Enak",
+    "emoji": "🍕 🍔 🍟 🍩 🍦 ☕",
+    "description": "Emoji makanan enak untuk ajakan makan dan chat santai di WhatsApp."
+  },
+  {
+    "id": "emoji-6",
+    "name": "Emoji Alam & Liburan",
+    "emoji": "🌸 🌊 🏖️ 🌅 🌈 ⛰️",
+    "description": "Emoji alam dan liburan untuk status WA dan ucapan selamat pagi."
+  }
+]
