@@ -30,7 +30,28 @@ CATEGORIES = {
     "pemandangan": ("Pemandangan Alam", "Wallpaper pemandangan alam: danau, gunung, hutan, pantai, dan sunset."),
     "hewan": ("Hewan Lucu", "Wallpaper hewan lucu: kucing, anjing, hamster, dan hewan menggemaskan lainnya."),
     "emoji": ("Emoji / Stiker WA", "Emoji dan stiker WA lucu yang bisa disalin langsung untuk WhatsApp."),
+    # --- New global / US trending categories (English SEO, added 2026-11-21) ---
+    "sunset": ("Sunset", "Free HD sunset wallpapers for iPhone and Android — golden hour, sunset skies, beaches and mountains."),
+    "galaxy": ("Galaxy", "Free HD galaxy wallpapers for iPhone and Android — nebula, Milky Way, stars and deep space."),
+    "ocean": ("Ocean", "Free HD ocean wallpapers for iPhone and Android — waves, beaches and blue sea."),
+    "city-lights": ("City Lights", "Free HD city lights wallpapers for iPhone and Android — night skylines, streets and urban lights."),
+    "forest": ("Forest", "Free HD forest wallpapers for iPhone and Android — green forests, sunlight and misty trees."),
+    "minimal": ("Minimal", "Free HD minimal wallpapers for iPhone and Android — clean, simple and elegant designs."),
+    "neon": ("Neon", "Free HD neon wallpapers for iPhone and Android — glowing neon lights, gaming and city neon."),
+    "mountain": ("Mountain", "Free HD mountain wallpapers for iPhone and Android — peaks, lakes, snow and valleys."),
+    "cyberpunk": ("Cyberpunk", "Free HD cyberpunk wallpapers for iPhone and Android — futuristic neon cities and sci-fi vibes."),
+    "space": ("Space", "Free HD space wallpapers for iPhone and Android — stars, moon, planets and outer space."),
+    "cars": ("Cars", "Free HD car wallpapers for iPhone and Android — sports cars, classic cars and race cars."),
+    "technology": ("Technology", "Free HD technology wallpapers for iPhone and Android — circuits, tech and digital designs."),
+    "nature": ("Nature", "Free HD nature wallpapers for iPhone and Android — flowers, green scenery and beautiful nature."),
+    "abstract": ("Abstract", "Free HD abstract wallpapers for iPhone and Android — colorful abstract art and gradients."),
+    "animals": ("Animals", "Free HD animal wallpapers for iPhone and Android — cute pets and wild animals."),
 }
+
+# Categories whose pages are in English (US/global SEO)
+EN_CATEGORIES = {"sunset", "galaxy", "ocean", "city-lights", "forest", "minimal",
+                 "neon", "mountain", "cyberpunk", "space", "cars", "technology",
+                 "nature", "abstract", "animals"}
 
 def load(name):
     p = ROOT / "data" / name
@@ -77,10 +98,10 @@ def json_ld(items):
     }
     return '<script type="application/ld+json">\n' + j.dumps(data, ensure_ascii=False, indent=2) + '\n</script>'
 
-def page(title, desc, body, prefix="", canonical="", items=None, extra_head=""):
+def page(title, desc, body, prefix="", canonical="", items=None, extra_head="", lang="id"):
     items = items or []
     return f"""<!DOCTYPE html>
-<html lang="id">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -137,6 +158,21 @@ def seo_section():
 <p>Blog ini diperbarui setiap hari dengan wallpaper baru. Gunakan kolom pencarian di atas untuk mencari tema favoritmu, misalnya “kucing”, “masjid”, atau “sunset”.</p>
 </section>"""
 
+def seo_section_en(prefix=""):
+    links = "".join(
+        f'<li><strong><a href="{prefix}categories/{s}.html">{l} Wallpaper</a></strong> — {d}</li>'
+        for s, (l, d) in CATEGORIES.items() if s in EN_CATEGORIES
+    )
+    return f"""<section class="seo">
+<h2>Free HD Wallpapers for iPhone &amp; Android — Trending Now</h2>
+<p>Looking for a free HD wallpaper for your phone? Pick any wallpaper below and tap <strong>Download Wallpaper</strong>. Every image opens in full size (1080x1920) and saves straight to your gallery — no sign-up, no extra app. New wallpapers are added every day.</p>
+<h2>Trending Wallpaper Topics</h2>
+<ul>
+{links}
+</ul>
+<p>Popular searches right now: sunset wallpaper, galaxy wallpaper, ocean wallpaper, city lights wallpaper, forest wallpaper, minimal wallpaper, neon wallpaper, mountain wallpaper, anime wallpaper and cyberpunk wallpaper. Use the search box above to find your favorite theme — try “sunset”, “galaxy”, “ocean” or “neon”.</p>
+</section>"""
+
 def render(wallpapers, emoji):
     # Beranda
     latest = sorted(wallpapers, key=lambda x: x.get("date", ""), reverse=True)
@@ -151,12 +187,10 @@ def render(wallpapers, emoji):
     )
     body = f"""<h1>Download Wallpaper HP Gratis HD</h1>
 <p class="lead">{esc(SITE_DESC)}</p>
-<input id="search" class="search" type="search" placeholder="Cari wallpaper: kucing, masjid, sunset, anime..." aria-label="Cari wallpaper">
+<input id="search" class="search" type="search" placeholder="Cari wallpaper: kucing, sunset, galaxy, neon, ocean..." aria-label="Cari wallpaper">
 <div class="filters">
 <button data-filter="all" class="active">Semua</button>
-<button data-filter="aesthetic">Aesthetic</button><button data-filter="anime">Anime</button>
-<button data-filter="islami">Islami</button><button data-filter="pemandangan">Pemandangan</button>
-<button data-filter="hewan">Hewan Lucu</button>
+{''.join(f'<button data-filter="{s}">{l}</button>' for s, (l, _) in CATEGORIES.items() if s != "emoji")}
 </div>
 <p class="meta" id="count">{len(latest)} wallpaper</p>
 <div class="layout"><div>
@@ -170,7 +204,8 @@ def render(wallpapers, emoji):
 <h2>Emoji &amp; Stiker WA</h2>
 <div class="emoji-grid">{emoji_preview}</div>
 <p><a href="categories/emoji.html">Lihat semua emoji &amp; stiker WA &rarr;</a></p>
-{seo_section()}"""
+{seo_section()}
+{seo_section_en()}"""
     (ROOT / "index.html").write_text(
         page("Download Wallpaper HP Gratis HD — Aesthetic, Anime, Islami | " + SITE_NAME,
              SITE_DESC, body, prefix="", canonical=SITE_URL + "/", items=latest), encoding="utf-8")
@@ -190,12 +225,30 @@ def render(wallpapers, emoji):
 {AD_SIDEBAR}
 {seo_section()}"""
             items_c = []
+            page_title = f"Wallpaper {label} untuk HP — Download Gratis HD | {SITE_NAME}"
+            page_desc = f"Download wallpaper {label.lower()} untuk HP gratis HD. {cdesc}"
+            page_lang = "id"
         else:
             items_c = [w for w in wallpapers if w["category"] == slug]
             items_c = sorted(items_c, key=lambda x: x.get("date", ""), reverse=True)
             cards_c = "\n".join(card(w, prefix="../") for w in items_c)
-            body_c = f"""<h1>Wallpaper {esc(label)} untuk HP — Download Gratis HD</h1>
-<p class="lead">{esc(cdesc)} Semua wallpaper {esc(label.lower())} di bawah ini gratis diunduh dalam resolusi {esc(items_c[0]['resolution']) if items_c else '1080x1920'}.</p>
+            res = esc(items_c[0]['resolution']) if items_c else '1080x1920'
+            if slug in EN_CATEGORIES:
+                body_c = f"""<h1>{esc(label)} Wallpaper for Phone — Free HD Download</h1>
+<p class="lead">{esc(cdesc)} All {esc(label.lower())} wallpapers below are free to download in {res} resolution for iPhone and Android.</p>
+<p class="meta">{len(items_c)} {esc(label.lower())} wallpapers</p>
+<div class="grid" id="wallpaper-grid" data-category="{slug}">
+{cards_c}
+</div>
+{AD_INFEED}
+{AD_SIDEBAR}
+{seo_section_en("../")}"""
+                page_title = f"{label} Wallpaper for iPhone & Android — Free HD Download | {SITE_NAME}"
+                page_desc = f"Download free {label.lower()} wallpaper for iPhone and Android in HD. {cdesc}"
+                page_lang = "en"
+            else:
+                body_c = f"""<h1>Wallpaper {esc(label)} untuk HP — Download Gratis HD</h1>
+<p class="lead">{esc(cdesc)} Semua wallpaper {esc(label.lower())} di bawah ini gratis diunduh dalam resolusi {res}.</p>
 <p class="meta">{len(items_c)} wallpaper {esc(label.lower())}</p>
 <div class="grid" id="wallpaper-grid" data-category="{slug}">
 {cards_c}
@@ -203,10 +256,12 @@ def render(wallpapers, emoji):
 {AD_INFEED}
 {AD_SIDEBAR}
 {seo_section()}"""
+                page_title = f"Wallpaper {label} untuk HP — Download Gratis HD | {SITE_NAME}"
+                page_desc = f"Download wallpaper {label.lower()} untuk HP gratis HD. {cdesc}"
+                page_lang = "id"
         (ROOT / "categories" / f"{slug}.html").write_text(
-            page(f"Wallpaper {label} untuk HP — Download Gratis HD | {SITE_NAME}",
-                 f"Download wallpaper {label.lower()} untuk HP gratis HD. {cdesc}",
-                 body_c, prefix="../", canonical=f"{SITE_URL}/categories/{slug}.html", items=items_c),
+            page(page_title, page_desc,
+                 body_c, prefix="../", canonical=f"{SITE_URL}/categories/{slug}.html", items=items_c, lang=page_lang),
             encoding="utf-8")
 
     # sitemap.xml
