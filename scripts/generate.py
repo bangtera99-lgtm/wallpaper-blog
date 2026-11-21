@@ -46,18 +46,10 @@ def esc(s):
 AD_HEAD = """<!-- ADSTERRA: POPUNDER — dipasang 2026-11-21 dari kode Putela -->
 <script data-cfasync="false" src="https://accountut.com/1/18afe249b73f75bdec1c11a3d446102b"></script>
 """
-AD_BANNER = """<!-- ADSTERRA: BANNER 728x90 — paste code here -->
-<div class="ad-slot banner728"><span class="ad-label">Iklan</span>
-<!-- Tempel kode banner Adsterra (728x90) di sini. Hapus baris placeholder ini saat sudah ditempel. -->
-</div>"""
-AD_INFEED = """<!-- ADSTERRA: IN-FEED / NATIVE BANNER — paste code here -->
-<div class="ad-slot"><span class="ad-label">Iklan</span>
-<!-- Tempel kode Native / banner Adsterra di sini. -->
-</div>"""
-AD_SIDEBAR = """<!-- ADSTERRA: SIDEBAR BANNER — paste code here -->
-<div class="ad-slot"><span class="ad-label">Iklan</span>
-<!-- Tempel kode banner sidebar Adsterra di sini. -->
-</div>"""
+# Slot banner dihapus 2026-11-21 atas permintaan Putela — hanya Popunder + Direct Link (Smart Link) yang dipakai.
+AD_BANNER = ""
+AD_INFEED = ""
+AD_SIDEBAR = ""
 
 def card(w, prefix=""):
     return f"""<article class="card">
