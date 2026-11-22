@@ -856,5 +856,83 @@
     "image": "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=720&q=80&auto=format&fit=crop",
     "full": "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1080&q=90&auto=format&fit=crop",
     "date": "2026-11-21"
+  },
+  {
+    "id": "pool-aesthetic-1",
+    "slug": "wallpaper-abstrak-cat-warna",
+    "title": "Wallpaper Abstrak Cat Warna untuk HP",
+    "category": "aesthetic",
+    "description": "Wallpaper abstrak cat warna yang artistik untuk wallpaper HP.",
+    "tags": "wallpaper abstrak, wallpaper cat warna, wallpaper aesthetic",
+    "resolution": "1080x1920",
+    "unsplash_id": "1541961017774-22349e4a1262",
+    "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-22"
+  },
+  {
+    "id": "pool-aesthetic-2",
+    "slug": "wallpaper-abstrak-gelap-hp",
+    "title": "Wallpaper Abstrak Gelap untuk HP",
+    "category": "aesthetic",
+    "description": "Wallpaper abstrak gelap yang elegan untuk layar HP.",
+    "tags": "wallpaper abstrak gelap, wallpaper aesthetic, wallpaper hp",
+    "resolution": "1080x1920",
+    "unsplash_id": "1550684376-efcbd6e3f031",
+    "image": "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-22"
+  },
+  {
+    "id": "pool-aesthetic-3",
+    "slug": "wallpaper-abstrak-3d-warna",
+    "title": "Wallpaper Abstrak 3D Warna untuk HP",
+    "category": "aesthetic",
+    "description": "Wallpaper abstrak 3D warna yang modern untuk wallpaper HP.",
+    "tags": "wallpaper abstrak 3d, wallpaper warna, wallpaper hp aesthetic",
+    "resolution": "1080x1920",
+    "unsplash_id": "1614850523459-c2f4c699c52e",
+    "image": "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-22"
+  },
+  {
+    "id": "pool-pemandangan-1",
+    "slug": "wallpaper-padang-rumput-hp",
+    "title": "Wallpaper Padang Rumput Hijau untuk HP",
+    "category": "pemandangan",
+    "description": "Wallpaper padang rumput hijau yang luas untuk wallpaper HP.",
+    "tags": "wallpaper padang, wallpaper rumput, wallpaper pemandangan",
+    "resolution": "1080x1920",
+    "unsplash_id": "1500382017468-9049fed747ef",
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-22"
+  },
+  {
+    "id": "pool-pemandangan-2",
+    "slug": "wallpaper-sunset-lapangan-hp",
+    "title": "Wallpaper Sunset di Lapangan untuk HP",
+    "category": "pemandangan",
+    "description": "Wallpaper sunset hangat di lapangan terbuka untuk wallpaper HP.",
+    "tags": "wallpaper sunset, wallpaper lapangan, wallpaper pemandangan",
+    "resolution": "1080x1920",
+    "unsplash_id": "1470252649378-9c29740c9fa8",
+    "image": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-22"
+  },
+  {
+    "id": "pool-pemandangan-3",
+    "slug": "wallpaper-burung-langit-hp",
+    "title": "Wallpaper Burung di Langit Biru",
+    "category": "pemandangan",
+    "description": "Wallpaper burung terbang di langit biru untuk wallpaper HP.",
+    "tags": "wallpaper burung, wallpaper langit, wallpaper pemandangan",
+    "resolution": "1080x1920",
+    "unsplash_id": "1444464666168-49d633b86797",
+    "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-22"
   }
 ]
