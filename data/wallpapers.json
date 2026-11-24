@@ -1012,5 +1012,83 @@
     "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=720&q=80&auto=format&fit=crop",
     "full": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1080&q=90&auto=format&fit=crop",
     "date": "2026-11-23"
+  },
+  {
+    "id": "pool-pemandangan-10",
+    "slug": "wallpaper-gunung-danau-hp",
+    "title": "Wallpaper Gunung dan Danau HD",
+    "category": "pemandangan",
+    "description": "Wallpaper gunung dan danau dalam resolusi HD untuk wallpaper HP.",
+    "tags": "wallpaper gunung danau, wallpaper pemandangan, wallpaper hd",
+    "resolution": "1080x1920",
+    "unsplash_id": "1500530855697-b586d89ba3ee",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "pool-hewan-1",
+    "slug": "wallpaper-anjing-lucu-taman",
+    "title": "Wallpaper Anjing Lucu di Taman",
+    "category": "hewan",
+    "description": "Wallpaper anjing lucu di taman yang ceria untuk wallpaper HP.",
+    "tags": "wallpaper anjing lucu, wallpaper hewan, wallpaper hp",
+    "resolution": "1080x1920",
+    "unsplash_id": "1477884213360-7e9d7dcc1e48",
+    "image": "https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "pool-hewan-2",
+    "slug": "wallpaper-anjing-pug-hp",
+    "title": "Wallpaper Anjing Pug untuk HP",
+    "category": "hewan",
+    "description": "Wallpaper anjing pug yang menggemaskan untuk wallpaper HP.",
+    "tags": "wallpaper anjing pug, wallpaper hewan lucu, wallpaper hp",
+    "resolution": "1080x1920",
+    "unsplash_id": "1517849845537-4d257902454a",
+    "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "pool-anime-1",
+    "slug": "wallpaper-potret-aesthetic-hp",
+    "title": "Wallpaper Potret Aesthetic untuk HP",
+    "category": "anime",
+    "description": "Wallpaper potret aesthetic bergaya anime untuk wallpaper HP.",
+    "tags": "wallpaper potret, wallpaper anime aesthetic, wallpaper hp",
+    "resolution": "1080x1920",
+    "unsplash_id": "1544005313-94ddf0286df2",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "pool-anime-2",
+    "slug": "wallpaper-potret-wanita-aesthetic",
+    "title": "Wallpaper Potret Wanita Aesthetic HP",
+    "category": "anime",
+    "description": "Wallpaper potret wanita aesthetic untuk wallpaper HP.",
+    "tags": "wallpaper potret wanita, wallpaper aesthetic, wallpaper hp",
+    "resolution": "1080x1920",
+    "unsplash_id": "1531746020798-e6953c6e8e04",
+    "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "pool-anime-3",
+    "slug": "wallpaper-potret-girl-hp",
+    "title": "Wallpaper Potret Girl Aesthetic untuk HP",
+    "category": "anime",
+    "description": "Wallpaper potret girl aesthetic yang manis untuk wallpaper HP.",
+    "tags": "wallpaper potret girl, wallpaper aesthetic, wallpaper hp",
+    "resolution": "1080x1920",
+    "unsplash_id": "1534528741775-53994a69daeb",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-24"
   }
 ]
