@@ -1168,5 +1168,83 @@
     "image": "https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=720&q=80&auto=format&fit=crop",
     "full": "https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=1080&q=90&auto=format&fit=crop",
     "date": "2026-11-25"
+  },
+  {
+    "id": "sunset-3",
+    "slug": "sunset-beach-wallpaper-free",
+    "title": "Sunset Beach Wallpaper Free HD Download",
+    "category": "sunset",
+    "description": "Warm sunset colors over the beach. Download this free HD sunset wallpaper for iPhone and Android.",
+    "tags": "sunset beach wallpaper, sunset wallpaper free, beach sunset wallpaper, sunset wallpaper android",
+    "resolution": "1080x1920",
+    "unsplash_id": "1523712999610-f77fbcfc3843",
+    "image": "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-26"
+  },
+  {
+    "id": "sunset-4",
+    "slug": "golden-hour-wallpaper-4k",
+    "title": "Golden Hour Wallpaper 4K for Android",
+    "category": "sunset",
+    "description": "Capture the golden hour on your phone with this warm sunset wallpaper, free to download in HD.",
+    "tags": "golden hour wallpaper, sunset wallpaper 4k, sunset wallpaper android, warm sunset wallpaper",
+    "resolution": "1080x1920",
+    "unsplash_id": "1495616811223-4d98c6e9c869",
+    "image": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-26"
+  },
+  {
+    "id": "sunset-5",
+    "slug": "sunset-field-wallpaper-phone",
+    "title": "Sunset Field Wallpaper for Phone",
+    "category": "sunset",
+    "description": "A calm sunset over open fields — a relaxing free wallpaper for your phone screen.",
+    "tags": "sunset field wallpaper, sunset wallpaper for phone, calm sunset wallpaper, sunset wallpaper hd",
+    "resolution": "1080x1920",
+    "unsplash_id": "1495567720989-cebdbdd97913",
+    "image": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-26"
+  },
+  {
+    "id": "galaxy-3",
+    "slug": "milky-way-wallpaper-phone",
+    "title": "Milky Way Galaxy Wallpaper for Phone",
+    "category": "galaxy",
+    "description": "The Milky Way stretched across the night sky — a free HD galaxy wallpaper for your phone.",
+    "tags": "milky way wallpaper, galaxy wallpaper for phone, stars wallpaper, night sky wallpaper",
+    "resolution": "1080x1920",
+    "unsplash_id": "1451187580459-43490279c0fa",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-26"
+  },
+  {
+    "id": "galaxy-4",
+    "slug": "purple-galaxy-wallpaper-hd",
+    "title": "Purple Galaxy Wallpaper HD Free Download",
+    "category": "galaxy",
+    "description": "A dreamy purple galaxy wallpaper, free to download in HD for iPhone and Android phones.",
+    "tags": "purple galaxy wallpaper, galaxy wallpaper hd, galaxy wallpaper free, purple space wallpaper",
+    "resolution": "1080x1920",
+    "unsplash_id": "1464802686167-b939a6910659",
+    "image": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-26"
+  },
+  {
+    "id": "galaxy-5",
+    "slug": "stars-galaxy-wallpaper-android",
+    "title": "Stars Galaxy Wallpaper for Android",
+    "category": "galaxy",
+    "description": "Thousands of stars in a distant galaxy — a free HD wallpaper for your Android home screen.",
+    "tags": "stars wallpaper, galaxy wallpaper android, space wallpaper hd, starry sky wallpaper",
+    "resolution": "1080x1920",
+    "unsplash_id": "1462331940025-496dfbfc7564",
+    "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-26"
   }
 ]
