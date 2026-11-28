@@ -1324,5 +1324,83 @@
     "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=720&q=80&auto=format&fit=crop",
     "full": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1080&q=90&auto=format&fit=crop",
     "date": "2026-11-27"
+  },
+  {
+    "id": "forest-4",
+    "slug": "misty-forest-wallpaper-hd",
+    "title": "Misty Forest Wallpaper HD for Android",
+    "category": "forest",
+    "description": "A misty forest in soft morning light — a free HD wallpaper for Android and iPhone.",
+    "tags": "misty forest wallpaper, forest wallpaper hd, foggy forest wallpaper, forest wallpaper android",
+    "resolution": "1080x1920",
+    "unsplash_id": "1502082553048-f009c37129b9",
+    "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-28"
+  },
+  {
+    "id": "minimal-3",
+    "slug": "minimal-mountain-wallpaper",
+    "title": "Minimal Mountain Wallpaper for Phone",
+    "category": "minimal",
+    "description": "A minimal mountain scene with lots of empty space — a free HD wallpaper for your phone.",
+    "tags": "minimal mountain wallpaper, minimal wallpaper for phone, simple mountain wallpaper, minimal wallpaper hd",
+    "resolution": "1080x1920",
+    "unsplash_id": "1494438639946-1ebd1d20bf85",
+    "image": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-28"
+  },
+  {
+    "id": "minimal-4",
+    "slug": "simple-minimal-wallpaper-android",
+    "title": "Simple Minimal Wallpaper for Android",
+    "category": "minimal",
+    "description": "A simple, clean minimal wallpaper that looks great on any Android home screen. Free HD download.",
+    "tags": "simple wallpaper, minimal wallpaper android, clean wallpaper hd, minimal wallpaper free",
+    "resolution": "1080x1920",
+    "unsplash_id": "1483728642387-6c3bdd6c93e5",
+    "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-28"
+  },
+  {
+    "id": "neon-3",
+    "slug": "neon-lights-wallpaper-phone",
+    "title": "Neon Lights Wallpaper for Phone",
+    "category": "neon",
+    "description": "Colorful neon lights on a dark background — a free HD wallpaper for your phone.",
+    "tags": "neon lights wallpaper, neon wallpaper for phone, colorful neon wallpaper, neon wallpaper hd",
+    "resolution": "1080x1920",
+    "unsplash_id": "1550745165-9bc0b252726f",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-28"
+  },
+  {
+    "id": "neon-4",
+    "slug": "purple-neon-wallpaper-hd",
+    "title": "Purple Neon Wallpaper HD Free Download",
+    "category": "neon",
+    "description": "A glowing purple neon wallpaper, free to download in HD for iPhone and Android.",
+    "tags": "purple neon wallpaper, neon wallpaper hd, neon wallpaper free, purple wallpaper",
+    "resolution": "1080x1920",
+    "unsplash_id": "1563089145-599997674d42",
+    "image": "https://images.unsplash.com/photo-1563089145-599997674d42?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1563089145-599997674d42?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-28"
+  },
+  {
+    "id": "neon-5",
+    "slug": "neon-city-wallpaper-free",
+    "title": "Neon City Wallpaper Free HD Download",
+    "category": "neon",
+    "description": "Neon signs lighting up the city at night — a free HD neon wallpaper for your phone.",
+    "tags": "neon city wallpaper, neon wallpaper free, neon sign wallpaper, city neon wallpaper",
+    "resolution": "1080x1920",
+    "unsplash_id": "1572044162444-ad60f128bdea",
+    "image": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=720&q=80&auto=format&fit=crop",
+    "full": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=1080&q=90&auto=format&fit=crop",
+    "date": "2026-11-28"
   }
 ]
